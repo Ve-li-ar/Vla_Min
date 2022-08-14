@@ -29,26 +29,17 @@ event.target.classList.remove('hold', 'hide')
 
 function dragover (event) {
     event.preventDefault()
-    // console.log('drag over')
 }
 
 function dragenter (event) {
     event.target.classList.add('hovered')
-    // console.log('drag enter')
-
 }
 
 function dragleave (event) {
     event.target.classList.remove('hovered')
-
-    // console.log('drag leave')
-
 }
 
 function dragdrop (event) {
     event.target.append(item)
     event.target.classList.remove('hovered')
-
-    // console.log('drag drop')
-
 }
